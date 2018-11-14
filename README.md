@@ -1,4 +1,4 @@
-# dream_keeper
+# Dream Keeper
 
 A Flutter + SQFLite project that extends the power of the well known note keeper format by allowing to register **business ideas** thanks to a form that includes a **voice recorder**.
 
@@ -11,7 +11,7 @@ Feel free to collaborate!
 - [x] Basic UI and Navigation
 - [x] Basic voice recorder
 - [x] Append the records to the textual info
-- [ ] New stylish UI
+- [ ] Stylish UI
 - [ ] Make it responsive
 - [ ] Extend form to receive more info
 - [ ] Validate the form
