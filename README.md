@@ -2,7 +2,7 @@
 
 A Flutter + SQFLite project that extends the power of the well known note keeper format by allowing to register **business ideas** thanks to a form that includes a **voice recorder**.
 
-The input information is based on the famous **[Business Model Canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas)**. That way, the user will have an easyly generated output to give an initial structure to their business idea.
+The input information is based on the famous **[Business Model Canvas](https://en.wikipedia.org/wiki/Business_Model_Canvas)**. That way, the user will have an easily generated output to give an initial structure to their business idea.
 
 Feel free to collaborate!
 
