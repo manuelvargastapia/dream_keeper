@@ -11,15 +11,33 @@ Feel free to collaborate!
 - [x] Basic UI and Navigation
 - [x] Basic voice recorder
 - [x] Append the records to the textual info
-- [] New stylish UI
-- [] Extend form to receive more info
-- [] Validate the form
-- [] Improve the voice recorder mechanism (limit their duration, etc)
+- [ ] New stylish UI
+- [ ] Make it responsive
+- [ ] Extend form to receive more info
+- [ ] Validate the form
+- [ ] Improve the voice recorder mechanism (limit their duration, etc)
 
 More feature ideas are welcome, as well as suggestions and help with the code organization.
 
 ## Current screenshots
 
+Home (clean): 
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen1.png "Home")
+
+Form:
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen2.png "Form")
+
+Editing: 
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen3.png "Editing")
+
+Record: 
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen4.png "Record")
+
+Save: 
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen5.png "Save")
+
+Homa (with content):
+![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen6.png "Home")
 
 
 ## Getting Started
