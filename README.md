@@ -21,24 +21,12 @@ More feature ideas are welcome, as well as suggestions and help with the code or
 
 ## Current screenshots
 
-Home (clean): 
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen1.png "Home")
-
-Form:
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen2.png "Form")
-
-Editing: 
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen3.png "Editing")
-
-Record: 
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen4.png "Record")
-
-Save: 
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen5.png "Save")
-
-Homa (with content):
-![alt text](https://github.com/manuelvargastapia/dream_keeper/blob/master/screenshots/screen6.png "Home")
-
+<img src="/screenshots/screen1.png" width="260" height="480">Home (clean)
+<img src="/screenshots/screen2.png" width="260" height="480">Form
+<img src="/screenshots/screen3.png" width="260" height="480">Editing
+<img src="/screenshots/screen4.png" width="260" height="480">Recording
+<img src="/screenshots/screen5.png" width="260" height="480">Save
+<img src="/screenshots/screen6.png" width="260" height="480">Home (with content)
 
 ## Getting Started
 
