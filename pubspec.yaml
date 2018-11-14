@@ -1,0 +1,43 @@
+name: dream_keeper
+description: A note keeper for your business ideas.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^0.12.2+1
+  path_provider: ^0.4.1
+  intl: ^0.15.7
+  flutter_sound: ^1.1.5
+  shared_preferences: ^0.4.3
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/icons/ic_play.png
+  - assets/icons/2.0x/ic_play.png
+  - assets/icons/3.0x/ic_play.png
+  - assets/icons/ic_stop.png
+  - assets/icons/2.0x/ic_stop.png
+  - assets/icons/3.0x/ic_stop.png
+  - assets/icons/ic_pause.png
+  - assets/icons/2.0x/ic_pause.png
+  - assets/icons/3.0x/ic_pause.png
+  - assets/icons/ic_mic.png
+  - assets/icons/2.0x/ic_mic.png
+  - assets/icons/3.0x/ic_mic.png
+  - assets/icons/ic_volume_down.png
+  - assets/icons/2.0x/ic_volume_down.png
+  - assets/icons/3.0x/ic_volume_down.png
+  - assets/icons/ic_volume_up.png
+  - assets/icons/2.0x/ic_volume_up.png
+  - assets/icons/3.0x/ic_volume_up.png

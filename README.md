@@ -1,2 +1,8 @@
 # dream_keeper
-Dream Keeper allows you to store fleeting business ideas through text and voice notes. Made with Flutter and SQFLite.
+
+A new Flutter project.
+
+## Getting Started
+
+For help getting started with Flutter, view our online
+[documentation](https://flutter.io/).
