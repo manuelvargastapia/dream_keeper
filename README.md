@@ -16,6 +16,7 @@ Feel free to collaborate!
 - [ ] Extend form to receive more info
 - [ ] Validate the form
 - [ ] Improve the voice recorder mechanism (limit their duration, etc)
+- [ ] Show Canvas Business Model (pull apart the editing from visualization)
 
 More feature ideas are welcome, as well as suggestions and help with the code organization.
 
