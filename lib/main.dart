@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'my_routes.dart';
+import './pages/home_page.dart';
 
 void main() => runApp(DreamKeeper());
 
@@ -12,12 +12,14 @@ class DreamKeeper extends StatelessWidget {
       title: _appName,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.lightGreen,
-          primaryTextTheme: TextTheme(
-              title: TextStyle(
+        primarySwatch: Colors.lightGreen,
+        primaryTextTheme: TextTheme(
+          title: TextStyle(
             color: Colors.white,
-          ))),
-      routes: myRoutes,
+          ),
+        ),
+      ),
+      home: HomePage(),
     );
   }
 }
