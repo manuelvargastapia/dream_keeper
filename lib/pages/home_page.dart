@@ -5,7 +5,7 @@ import '../model/idea.dart';
 import '../data/db_helper.dart';
 import '../components/home_ui/content_home.dart';
 import '../components/home_ui/fab_home.dart';
-import 'idea_details_page.dart';
+import 'edit_idea_page.dart';
 
 class HomePage extends StatefulWidget {
   static const String pageRoute = '/';
@@ -35,8 +35,6 @@ class HomePageState extends State<HomePage> {
       body: ContentHome(
         _ideasListCount,
         _ideasList,
-        _getPriorityColor,
-        _getPriorityIcon,
         _deleteIdea,
         _navigateToDetailsPage,
       ),
@@ -58,32 +56,6 @@ class HomePageState extends State<HomePage> {
     });
   }
 
-  Color _getPriorityColor(int priorityNumber) {
-    switch (priorityNumber) {
-      case 1:
-        return Colors.red;
-        break;
-      case 2:
-        return Colors.yellow;
-        break;
-      default:
-        return Colors.yellow;
-    }
-  }
-
-  Icon _getPriorityIcon(int priorityNumber) {
-    switch (priorityNumber) {
-      case 1:
-        return Icon(Icons.star);
-        break;
-      case 2:
-        return Icon(Icons.star_border, color: Colors.white);
-        break;
-      default:
-        return Icon(Icons.star_border, color: Colors.white);
-    }
-  }
-
   void _deleteIdea(BuildContext context, Idea idea) async {
     int deletedIdeasCount = await _databaseHelper.deleteIdea(idea.id);
     if (deletedIdeasCount != 0) {
@@ -101,7 +73,7 @@ class HomePageState extends State<HomePage> {
     bool succesfulNavigation = await Navigator.push(
       context,
       MaterialPageRoute(builder: (context) {
-        return IdeaDetailsPage(idea, title);
+        return EditIdeaPage(idea, title);
       }),
     );
     if (succesfulNavigation == true) {
