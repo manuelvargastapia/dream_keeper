@@ -1,40 +1,61 @@
 class Idea {
   int _id;
   String _title;
-  String _description;
   String _date;
-  int _priority;
-  String _problemToSolve;
-  String _customerSegment;
-  String _valueProposition;
+  String _brainstorm;
+  String _problem;
+  String _solution;
+  String _customers;
+  String _channels;
+  String _activities;
+  String _uniqueValue;
+  String _costs;
+  String _revenues;
   String _recAudioPath;
 
   Idea(
     this._title,
     this._date, [
-    this._priority = 2,
-    this._description,
-    this._problemToSolve,
-    this._customerSegment,
-    this._valueProposition,
+    this._brainstorm,
+    this._problem,
+    this._solution,
+    this._customers,
+    this._channels,
+    this._activities,
+    this._uniqueValue,
+    this._costs,
+    this._revenues,
     this._recAudioPath,
   ]);
 
-  Idea.withId(this._id, this._title, this._date, this._priority,
-      [this._description,
-      this._problemToSolve,
-      this._customerSegment,
-      this._valueProposition,
-      this._recAudioPath]);
+  Idea.withId(
+    this._id,
+    this._title,
+    this._date, [
+    this._brainstorm,
+    this._problem,
+    this._solution,
+    this._customers,
+    this._channels,
+    this._activities,
+    this._uniqueValue,
+    this._costs,
+    this._revenues,
+    this._recAudioPath,
+  ]);
 
   int get id => _id;
   String get title => _title;
-  String get description => _description;
   String get date => _date;
-  int get priority => _priority;
-  String get problemToSolve => _problemToSolve;
-  String get customerSegment => _customerSegment;
-  String get valueProposition => _valueProposition;
+  String get brainstorm => _brainstorm;
+  String get problem => _problem;
+  String get solution => _solution;
+  String get customers => _customers;
+  String get channels => _channels;
+  String get activities => _activities;
+  String get uniqueValue => _uniqueValue;
+  String get costs => _costs;
+  String get revenues => _revenues;
   String get recAudioPath => _recAudioPath;
 
   set title(String title) {
@@ -43,37 +64,61 @@ class Idea {
     }
   }
 
-  set description(String description) {
-    if (description.length <= 255) {
-      this._description = description;
-    }
-  }
-
-  set priority(int priority) {
-    if (priority >= 1 && priority <= 2) {
-      this._priority = priority;
-    }
-  }
-
   set date(String date) {
     this._date = date;
   }
 
-  set problemToSolve(String problemToSolve) {
-    if (problemToSolve.length <= 255) {
-      this._problemToSolve = problemToSolve;
+  set brainstorm(String brainstorm) {
+    if (brainstorm.length <= 255) {
+      this._brainstorm = brainstorm;
     }
   }
 
-  set customerSegment(String customerSegment) {
-    if (customerSegment.length <= 255) {
-      this._customerSegment = customerSegment;
+  set problem(String problem) {
+    if (problem.length <= 255) {
+      this._problem = problem;
     }
   }
 
-  set valueProposition(String valueProposition) {
-    if (valueProposition.length <= 255) {
-      this._valueProposition = valueProposition;
+  set solution(String solution) {
+    if (solution.length <= 255) {
+      this._solution = solution;
+    }
+  }
+
+  set customers(String customers) {
+    if (customers.length <= 255) {
+      this._customers = customers;
+    }
+  }
+
+  set channels(String channels) {
+    if (channels.length <= 255) {
+      this._channels = channels;
+    }
+  }
+
+  set activities(String activities) {
+    if (activities.length <= 255) {
+      this._activities = activities;
+    }
+  }
+
+  set uniqueValue(String uniqueValue) {
+    if (uniqueValue.length <= 255) {
+      this._uniqueValue = uniqueValue;
+    }
+  }
+
+  set costs(String costs) {
+    if (costs.length <= 255) {
+      this._costs = costs;
+    }
+  }
+
+  set revenues(String revenues) {
+    if (revenues.length <= 255) {
+      this._revenues = revenues;
     }
   }
 
@@ -87,12 +132,16 @@ class Idea {
       map['id'] = _id;
     }
     map['title'] = _title;
-    map['description'] = _description;
-    map['priority'] = _priority;
     map['date'] = _date;
-    map['problemToSolve'] = _problemToSolve;
-    map['customerSegment'] = _customerSegment;
-    map['valueProposition'] = _valueProposition;
+    map['brainstorm'] = _brainstorm;
+    map['problem'] = _problem;
+    map['solution'] = _solution;
+    map['customers'] = _customers;
+    map['channels'] = _channels;
+    map['activities'] = _activities;
+    map['uniqueValue'] = _uniqueValue;
+    map['costs'] = _costs;
+    map['revenues'] = _revenues;
     map['recAudioPath'] = _recAudioPath;
 
     return map;
@@ -101,12 +150,16 @@ class Idea {
   Idea.fromMapObject(Map<String, dynamic> map) {
     this._id = map['id'];
     this._title = map['title'];
-    this._description = map['description'];
-    this._priority = map['priority'];
     this._date = map['date'];
-    this._problemToSolve = map['problemToSolve'];
-    this._customerSegment = map['customerSegment'];
-    this._valueProposition = map['valueProposition'];
+    this._brainstorm = map['brainstorm'];
+    this._problem = map['problem'];
+    this._solution = map['solution'];
+    this._customers = map['customers'];
+    this._channels = map['channels'];
+    this._activities = map['activities'];
+    this._uniqueValue = map['uniqueValue'];
+    this._costs = map['costs'];
+    this._revenues = map['revenues'];
     this._recAudioPath = map['recAudioPath'];
   }
 }
