@@ -11,14 +11,15 @@ Feel free to collaborate!
 - [x] Basic UI and Navigation
 - [x] Basic voice recorder
 - [x] Append the records to the textual info
+- [x] Extend form to receive more info
+- [x] Launcher Icon (thanks to [Chris Butler](https://github.com/CBDevelopment))
 - [ ] Stylish UI
 - [ ] Make it responsive
-- [ ] Extend form to receive more info
 - [ ] Validate the form
 - [ ] Improve the voice recorder mechanism (limit their duration, etc)
 - [ ] Show Canvas Business Model (pull apart the editing from visualization)
 
-More feature ideas are welcome, as well as suggestions and help with the code organization.
+More feature ideas are welcome, as well as suggestions and help with the code organization, bug fixes, typos, etc.
 
 ## Current state
 
