@@ -4,16 +4,12 @@ import 'package:flutter/material.dart';
 class ContentHome extends StatelessWidget {
   final int _ideasListCount;
   final List<Idea> _ideasList;
-  final Function _getPriorityColor;
-  final Function _getPriorityIcon;
   final Function _deleteIdea;
   final Function _navigateToDetailsPage;
 
   ContentHome(
     this._ideasListCount,
     this._ideasList,
-    this._getPriorityColor,
-    this._getPriorityIcon,
     this._deleteIdea,
     this._navigateToDetailsPage,
   );
@@ -25,16 +21,19 @@ class ContentHome extends StatelessWidget {
         itemCount: _ideasListCount,
         itemBuilder: (BuildContext context, int position) {
           return Card(
+            margin: EdgeInsets.only(
+              top: 10.0,
+              left: 20.0,
+              right: 20.0,
+            ),
             color: Colors.white,
-            elevation: 2.0,
+            elevation: 4.0,
             child: ListTile(
               leading: CircleAvatar(
-                backgroundColor: _getPriorityColor(
-                  _ideasList[position].priority,
-                ),
-                child: _getPriorityIcon(
-                  _ideasList[position].priority,
-                ),
+                child: Icon(Icons.lightbulb_outline),
+                backgroundColor: Colors.yellow,
+                foregroundColor: Colors.black87,
+                radius: 25.0,
               ),
               title: Text(
                 _ideasList[position].title,

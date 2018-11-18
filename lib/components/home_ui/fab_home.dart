@@ -9,7 +9,8 @@ class FABHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.extended(
-      backgroundColor: Colors.yellowAccent,
+      backgroundColor: Colors.yellow,
+      foregroundColor: Colors.black87,
       tooltip: 'Add Idea',
       label: Text(
         'New Idea',
@@ -18,7 +19,7 @@ class FABHome extends StatelessWidget {
       icon: Icon(Icons.lightbulb_outline),
       onPressed: () {
         debugPrint('FAB clicked');
-        _navigateToDetail(Idea('', ''), 'Add Idea');
+        _navigateToDetail(Idea('', ''), 'New Idea');
       },
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30.0),
