@@ -7,16 +7,19 @@ import '../model/idea.dart';
 class DatabaseHelper {
   static DatabaseHelper _databaseHelper;
   static Database _database;
-  String columnId = 'id';
-
   String ideaTable = 'idea_table';
+  String columnId = 'id';
   String columnTitle = 'title';
-  String columnDescription = 'description';
-  String columnPriority = 'priority';
   String columnDate = 'date';
-  String columnProblemToSolve = 'problemToSolve';
-  String columnCustomerSegment = 'customerSegment';
-  String columnValueProposition = 'valueProposition';
+  String columnBrainstorm = 'brainstorm';
+  String columnProblem = 'problem';
+  String columnSolution = 'solution';
+  String columnCustomers = 'customers';
+  String columnChannels = 'channels';
+  String columnActivities = 'activities';
+  String columnUniqueValue = 'uniqueValue';
+  String columnCosts = 'costs';
+  String columnRevenues = 'revenues';
   String columnRecAudioPath = 'recAudioPath';
 
   DatabaseHelper._createInstance();
@@ -50,9 +53,12 @@ class DatabaseHelper {
     await db.execute(
       'CREATE TABLE $ideaTable('
           '$columnId INTEGER PRIMARY KEY AUTOINCREMENT, $columnTitle TEXT, '
-          '$columnDescription TEXT, $columnPriority INTEGER, $columnDate TEXT, '
-          '$columnProblemToSolve TEXT, $columnCustomerSegment TEXT, '
-          '$columnValueProposition TEXT, $columnRecAudioPath TEXT)',
+          '$columnDate TEXT, $columnBrainstorm TEXT, '
+          '$columnProblem TEXT, $columnSolution TEXT, '
+          '$columnCustomers TEXT, $columnChannels TEXT, '
+          '$columnActivities TEXT, $columnUniqueValue TEXT, '
+          '$columnCosts TEXT, $columnRevenues TEXT, '
+          '$columnRecAudioPath TEXT)',
     );
   }
 
@@ -60,7 +66,7 @@ class DatabaseHelper {
     Database myDatabase = await this.database;
     var result = await myDatabase.query(
       ideaTable,
-      orderBy: '$columnPriority ASC',
+      orderBy: '$columnTitle ASC',
     );
     return result;
   }
