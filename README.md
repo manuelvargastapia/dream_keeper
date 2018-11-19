@@ -13,12 +13,12 @@ Feel free to collaborate!
 - [x] Append the records to the textual info
 - [x] Extend form to receive more info
 - [x] Launcher Icon (thanks to [Chris Butler](https://github.com/CBDevelopment))
+- [x] Add Splash page
 - [ ] Stylish UI
 - [ ] Make it responsive
 - [ ] Validate the form
 - [ ] Improve the voice recorder mechanism (limit their duration, etc)
 - [ ] Show Canvas Business Model (pull apart the editing from visualization)
-- [ ] Add Splash page
 
 More feature ideas are welcome, as well as suggestions and help with the code organization, bug fixes, typos, etc.
 
